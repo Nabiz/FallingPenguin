@@ -16,12 +16,20 @@ _global_script_class_icons={
 [application]
 
 config/name="Falling Dafciux"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=600
 window/size/height=800
+window/size/resizable=false
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Platforms"
+2d_physics/layer_3="Death"
 
 [rendering]
 
