@@ -19,6 +19,16 @@ func _physics_process(delta):
         velocity.x =  walk_speed
     else:
         velocity.x = 0
+    _play_aanimation()
     move_and_slide(velocity, Vector2(0, -1))
     position.x = clamp(position.x, 0, screen_size.x-$ColorRect.margin_right)
 
+func _play_aanimation():
+    if velocity.x < 0:
+        $AnimatedSprite.flip_h = true
+        $AnimatedSprite.play()
+    elif velocity.x > 0:
+        $AnimatedSprite.flip_h = false
+        $AnimatedSprite.play()
+    else:
+       $AnimatedSprite.stop() 
