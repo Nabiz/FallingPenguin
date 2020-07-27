@@ -5,6 +5,7 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
 
 [node name="HUD" type="CanvasLayer"]
@@ -15,7 +16,11 @@ anchor_right = 1.0
 margin_right = -10.0
 margin_bottom = 95.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 1
 text = "0"
 align = 2
 __meta__ = {
@@ -27,8 +32,12 @@ anchor_right = 1.0
 margin_top = 150.0
 margin_bottom = 95.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.490196, 0.490196, 0.490196, 1 )
-text = "Falling Dafciux"
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 1
+text = "Falling Penguin"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -44,7 +53,8 @@ margin_top = -50.5
 margin_right = 97.5
 margin_bottom = 50.5
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Start"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -58,7 +68,12 @@ anchor_right = 1.0
 margin_left = 10.0
 margin_bottom = 95.0
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 1
 text = "Level: 0"
 __meta__ = {
 "_edit_use_anchors_": false
