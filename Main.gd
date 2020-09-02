@@ -40,7 +40,7 @@ func _on_HUD_start_game():
     $Platform.set_speed(speed)
     $HUD.show_message("Get Ready")
     $HUD.update_level(level)
-
+    $BackgroundStreamPlayer.play()
 
 func _on_DeathZone_body_entered(_body):
     $Player.walk_speed = 0
@@ -60,3 +60,5 @@ func _on_DeathZone_body_entered(_body):
 func _on_Platform_touched_by_player():
     score += 100 * level
     $HUD.update_score(score)
+    $ScoreStreamPlayer.play()
+    $ScoreStreamPlayer.stop()
