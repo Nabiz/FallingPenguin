@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SynthChime2.wav-90c104610cf1484d38af1994cc097eef.sample"
+
+[deps]
+
+source_file="res://Music/SynthChime2.wav"
+dest_files=[ "res://.import/SynthChime2.wav-90c104610cf1484d38af1994cc097eef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

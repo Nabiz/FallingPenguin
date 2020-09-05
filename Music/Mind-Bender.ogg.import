@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mind-Bender.ogg-c5dae3b4a1280e13745f88c0dc6e790d.oggstr"
+
+[deps]
+
+source_file="res://Music/Mind-Bender.ogg"
+dest_files=[ "res://.import/Mind-Bender.ogg-c5dae3b4a1280e13745f88c0dc6e790d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

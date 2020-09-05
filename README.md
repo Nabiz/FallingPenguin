@@ -8,6 +8,9 @@ Your objective is to survive as long as you can by avoiding spikes and fall down
 
 All graphics are made by me.
 
+Music by Eric Matyas
+www.soundimage.org
+
 ## Tools
 [Godot Engine](https://godotengine.org)
 
