@@ -24,9 +24,6 @@ position = Vector2( 222.455, 615.642 )
 [node name="SpawnTimer" type="Timer" parent="."]
 wait_time = 2.0
 
-[node name="SpeedTimer" type="Timer" parent="."]
-wait_time = 10.0
-
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
 [node name="DeathZone" parent="." instance=ExtResource( 5 )]
@@ -47,7 +44,6 @@ stream = ExtResource( 8 )
 volume_db = -16.0
 pitch_scale = 2.0
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
-[connection signal="timeout" from="SpeedTimer" to="." method="_on_SpeedTimer_timeout"]
 [connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
 [connection signal="body_entered" from="DeathZone" to="." method="_on_DeathZone_body_entered"]
 [connection signal="body_entered" from="DeathZone2" to="." method="_on_DeathZone_body_entered"]
